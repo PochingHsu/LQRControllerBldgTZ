@@ -31,7 +31,8 @@ which can be written as:
 ```math
 \dot x=Ax+Bu+Gd
 ```
-
+where $d$ is the outdoor temperature which is considered as the disturbance term and $G$ is the according system matrix
+<br/>
 where heatsink base area 
 $A_{base}=(N_{fin}-1)\cdot b\cdot L$, 
 fin area 
@@ -89,7 +90,7 @@ The feedback control law that minimized the cost function is:
 ```math
 u=-K(x-T_{setting})-KGd
 ```
-where $T_{setting}$ is the setting temperature of thermostat, $d$ is the outdoor temperature which is considered as the disturbance term and $G$ is the according system matrix
+where $T_{setting}$ is the setting temperature of thermostat
 <br/>
 $K$ is given by:
 ```math
