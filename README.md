@@ -3,11 +3,16 @@
 ![Sys_pic](https://github.com/user-attachments/assets/1a99af17-b0d7-454d-aade-dd8828da8344)
 <br/>
 # 2R2C building modeling
-We are using the heat sink model from Culham and Muzychka (2001) [^1] <br/><br/>
-**Thermal resistance of heatsink:** <br/>
+**Model of room temperature:** <br/>
 ```math
-R_{hs}=\frac{1}{h\cdot (A_{base}+N_{fin}\cdot \eta_{fin}\cdot A_{fin})}
+\frac{dT_{r}}{dt}=\frac{1}{C_{r}R_{rm}}(T_{m}-T_{r})+\frac{1}{C_{r}R_{ra}}(T_{a}-T_{r})+\dot{Q}_{ac}
 ```
+**Model of envelope temperature:** <br/>
+```math
+\frac{dT_{m}}{dt}=\frac{1}{C_{m}R_{rm}}(T_{m}-T_{r})
+```
+
+
 where heatsink base area 
 $A_{base}=(N_{fin}-1)\cdot b\cdot L$, 
 fin area 
