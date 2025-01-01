@@ -65,16 +65,16 @@ The feedback control law that minimized the cost function is:
 ```math
 u=-K(x-T_{setting})-KGd
 ```
-where $T_{setting}$ is the setting temperature of thermostat, $d$ is the outdoor temperature which is considered as the disturbance term, and $G$ is the system matrix of the disturbance
-
-1. CPU1 heatsink:
-   - Fin spacing [mm] $1\le b_{1}\le3$
-   - Fin thickness [mm] $0.2\le t_{fin, 1}\le3$
-2. CPU2 heatsink:
-   - Fin spacing [mm] $1\le b_{2}\le3$
-   - Fin thickness [mm] $0.2\le t_{fin, 2}\le3$
-3. Air flow rate [m^3/s] $0\le \forall_{air}\le0.02$
-4. Fin height for both heatsinks [mm] $H_{fin}$
+where $T_{setting}$ is the setting temperature of thermostat, $d$ is the outdoor temperature which is considered as the disturbance term and $G$ is the according system matrix
+<br/>
+$K$ is given by:
+```math
+K=R^{-1}B^{T}P
+```
+$P$ is found by solving the Riccati differential equation:
+```math
+\frac{dP(t)}{dt}=-[A^{T}P(t)+P(t)A-P(t)BR^{-1}B^{T}P(t)+Q]
+```
 
 **Constraints:**
 
