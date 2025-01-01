@@ -1,4 +1,4 @@
-# Blade server CPU heatsinks optimization
+# LQR controller for building thermal zone
 ![System](https://github.com/user-attachments/assets/93af8f2d-51bf-40da-aef5-cfdeee4c7f9f)
 ![Sys_pic](https://github.com/user-attachments/assets/1a99af17-b0d7-454d-aade-dd8828da8344)
 <br/>
