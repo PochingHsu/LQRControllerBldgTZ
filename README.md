@@ -85,7 +85,9 @@ P(t_{1})=F(t_{1})=Q(t_{1})
 The heater input is between [10, 300] Watts
 
 # Results
-$T_{setting}=22c$,  $T_{swing}=1c$, $Q$ and $R$ matrix:
+$T_{setting}=22c$,  $T_{swing}=1c$
+<br/>
+$Q$ and $R$ matrix:
 ```math
 Q=\begin{bmatrix}
 0.1 & 0 \\ 0 & 0
