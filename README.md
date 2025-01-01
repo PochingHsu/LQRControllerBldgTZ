@@ -53,16 +53,13 @@ where $Re_{D_{h}}=\frac{\rho VD_{h}}{\mu}$, $L^*=\frac{L}{D_{h}Re_{D_{h}}}$
 <br/>
 # LQR optimal control
 The problem is solved as finite-horizon problem with control horizon: 0.5 hrs
-**Objectives:**
+<br/>
 
-1. **Maximize the heat removed from least heat removed CPU:**
+**Quadratic cost function:**
 ```math
 \underset{\overrightarrow{x}}{argmax}\left\{  min[Q_{CPU1}(\overrightarrow{x}), Q_{CPU2}(\overrightarrow{x})]\right\}
 ```
-2. **Minimizing pressure drop of CPU heatsinks:**
-```math
-\underset{\overrightarrow{x}}{argmin}\left[\Delta P_{HS1}(\overrightarrow{x}) + \Delta P_{HS2}(\overrightarrow{x})\right]
-```
+
 **Design Variables:**
 
 1. CPU1 heatsink:
