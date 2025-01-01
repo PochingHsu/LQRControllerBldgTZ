@@ -57,7 +57,7 @@ The problem is solved as finite-horizon problem with control horizon: 0.5 hrs
 
 **Quadratic cost function:**
 ```math
-\underset{\overrightarrow{x}}{argmax}\left\{  min[Q_{CPU1}(\overrightarrow{x}), Q_{CPU2}(\overrightarrow{x})]\right\}
+J=x^{T}(t_{1})F(t_{1})x(t_{1})+\int_{t_{0}}^{t_{1}}(x^{T}Qx+u^{T}Ru)dt
 ```
 
 **Design Variables:**
