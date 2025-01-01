@@ -85,7 +85,8 @@ P(t_{1})=F(t_{1})=Q(t_{1})
 The heater input is between [10, 300] Watts
 
 # Results
-![Results](https://github.com/user-attachments/assets/447b174a-6ce9-4f21-805e-3bf173ab2775)
+![LQR_TZ_results](https://github.com/user-attachments/assets/a601ab93-456c-43fc-aebc-0dd46f8548de)
+
 | | $Q_1 [W]$     | $Q_2 [W]$      | $P_{total} [Pa]$      | $t_{fin,1}, t_{fin,2} [mm]$ | $b_{fin,1}, b_{fin,2} [mm]$      | $H_{fin} [mm]$      | $\forall_{air} [m^3/s]$     |
 |-----------------|----------------|----------------|----------------|----------------|----------------|----------------|----------------|
 | Single-obj: fmincon | 158 | 116| 90 | 0.6, 1.2 | 3.7, 3.6  | 24.9  |0.0111 |
