@@ -27,6 +27,7 @@ T_{r} \\ T_{m}
 \frac{1}{C_{r}R_{ra}} \\0
 \end{bmatrix} T_{a}
 ```
+which can be written as:
 ```math
 \dot x=Ax+Bu+Gd
 ```
