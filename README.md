@@ -61,7 +61,11 @@ J=x^{T}(t_{1})F(t_{1})x(t_{1})+\int_{t_{0}}^{t_{1}}(x^{T}Qx+u^{T}Ru)dt
 ```
 where $x$ is the states of the system, $u$ is the control input, $F(t_{1})$ is the initial cost matrix, $Q$ is the state cost matrix, and $R$ is the control cost matrix
 <br/>
-**Design Variables:**
+The feedback control law that minimized the cost function is:
+```math
+u=-K(x-T_{setting})-KGd
+```
+where $T_{setting}$ is the setting temperature of thermostat, $d$ is the outdoor temperature which is considered as the disturbance term, and $G$ is the system matrix of the disturbance
 
 1. CPU1 heatsink:
    - Fin spacing [mm] $1\le b_{1}\le3$
