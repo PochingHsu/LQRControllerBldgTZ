@@ -11,7 +11,22 @@
 ```math
 \frac{dT_{m}}{dt}=\frac{1}{C_{m}R_{rm}}(T_{m}-T_{r})
 ```
-
+**State and space model of building thermal zone:** <br/>
+```math
+\begin{bmatrix}
+\dot{T}_{r} \\
+\dot{T}_{m}
+\end{bmatrix}=\begin{bmatrix}
+-(\frac{1}{C_{r}R_{rm}}+\frac{1}{C_{r}R_{ra}}) & \frac{1}{C_{r}R_{rm}} \\ \frac{1}{C_{m}R_{rm}}
+ & -\frac{1}{C_{m}R_{rm}}
+\end{bmatrix}\begin{bmatrix}
+T_{r} \\ T_{m}
+\end{bmatrix}+\begin{bmatrix}
+\frac{1}{C_{r}R_{ra}} \\0
+\end{bmatrix} T_{a}+\begin{bmatrix}
+\dot Q_{ac} \\ 0
+\end{bmatrix}
+```
 
 where heatsink base area 
 $A_{base}=(N_{fin}-1)\cdot b\cdot L$, 
