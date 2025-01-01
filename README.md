@@ -85,11 +85,13 @@ P(t_{1})=F(t_{1})=Q(t_{1})
 The heater input is between [10, 300] Watts
 
 # Results
+$T_{setting}=22c$,  $T_{swing}=1c$, $Q$ and $R$ matrix:
+```math
+Q=\begin{bmatrix}
+0.1 & 0 \\ 0 & 0
+\end{bmatrix}, R=\begin{bmatrix}
+0.02 \end{bmatrix}
+```
 ![LQR_TZ_results](https://github.com/user-attachments/assets/a601ab93-456c-43fc-aebc-0dd46f8548de)
 
-| | $Q_1 [W]$     | $Q_2 [W]$      | $P_{total} [Pa]$      | $t_{fin,1}, t_{fin,2} [mm]$ | $b_{fin,1}, b_{fin,2} [mm]$      | $H_{fin} [mm]$      | $\forall_{air} [m^3/s]$     |
-|-----------------|----------------|----------------|----------------|----------------|----------------|----------------|----------------|
-| Single-obj: fmincon | 158 | 116| 90 | 0.6, 1.2 | 3.7, 3.6  | 24.9  |0.0111 |
-| Single-obj: ALM | 158  | 158  | 90  | 0.7, 0.3  | 3.8, 2.8  | 25  |0.0123 |
-| Multi-obj: goalattain | 212  | 250 | 250  | 0.2, 1.0  | 2.8, 2.0  | 25 |0.015|
 
