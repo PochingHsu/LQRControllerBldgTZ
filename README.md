@@ -37,49 +37,7 @@ B=\begin{bmatrix}
 ```
 where $d$ is the outdoor temperature which is considered as the disturbance term and $G$ is the according system matrix, $u$ is the control input (heater power, $\dot Q_{ac}$)
 <br/>
-where heatsink base area 
-$A_{base}=(N_{fin}-1)\cdot b\cdot L$, 
-fin area 
-$A_{fin}=2H_{fin}\cdot L$, 
-fin effieiceny 
-$\eta_{fin}=\frac{tanh(m\cdot H_{fin})}{m\cdot H_{fin}}$, 
-$m=\sqrt{\frac{2h}{k_{fin}\cdot t_{fin}}}$, 
-heat transfer coefficient 
-$h=Nu_{b}\frac{k_{air}}{b}$, 
-fin spacing 
-$b=\frac{W-N\cdot t_{fin}}{N-1}$
-<br/><br/>
-**Nusselt number:**
-```math
-Nu_{b}=\left[ (\frac{Re_{b}^*\cdot Pr}{2})^{-3}+\left(0.664\sqrt{Re_{b}^*}\cdot Pr^{1/3}\cdot \sqrt{1+\frac{3.65}{\sqrt{Re_{b}^*}}}  \right)^{-3} \right]^{-1/3}
-```
-where 
-```math
-Pr=\frac{\mu\cdot Cp}{k}
-```
-```math
-Re_{b}^*=Re_{b}\cdot \frac{b}{L}=\frac{\rho\cdot V\cdot b}{\mu}\cdot \frac{b}{L}
-```
-```math
-V = \frac{\forall_{air}}{(N_{fin}-1)\cdot b \cdot H_{fin}}
-```
-**Pressure drop of heatsink:** <br/>
-```math
-\Delta P=(K_{c}+4\cdot f_{app}\cdot\frac{L}{D_{h}}+K_{e})\frac{\rho V^{2}}{2}
-```
-$K_{c}=0.42(1-\sigma^{2})$ and $K_{e}=(1-\sigma^{2})^{2}$ are the pressure loss due to sudden contraction and expansion, respectively, where $\sigma=1-\frac{N\cdot t}{W}$
-<br/>
-<br/>
-Apparent friction factor:
-```math
-f_{app}=\frac{\left[ \left(  \frac{3.44}{\sqrt{L^*}}\right)^2+(f\cdot Re_{D_{h}})^2 \right]^{1/2}}{Re_{D_{h}}}
-```
-Fully developed flow friction factor:
-```math
-f=\frac{24-32.527(\frac{b}{H_{fin}})+46.721(\frac{b}{H_{fin}})^2-40.829(\frac{b}{H_{fin}})^3+22.954(\frac{b}{H_{fin}})^4-6.089(\frac{b}{H_{fin}})^5}{Re_{D_{h}}}
-```
-where $Re_{D_{h}}=\frac{\rho VD_{h}}{\mu}$, $L^*=\frac{L}{D_{h}Re_{D_{h}}}$
-<br/>
+
 # LQR optimal control
 The problem is solved as finite-horizon problem with control horizon: 0.5 hrs
 <br/>
