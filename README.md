@@ -1,8 +1,7 @@
 # LQR controller for building thermal zone
-![System](https://github.com/user-attachments/assets/93af8f2d-51bf-40da-aef5-cfdeee4c7f9f)
-![Sys_pic](https://github.com/user-attachments/assets/1a99af17-b0d7-454d-aade-dd8828da8344)
-<br/>
 # 2R2C building modeling
+![2R2C](https://github.com/user-attachments/assets/1b5595fa-cb77-4f40-846e-9d52526e30ee)
+
 **Model of room temperature:** <br/>
 ```math
 \frac{dT_{r}}{dt}=\frac{1}{C_{r}R_{rm}}(T_{m}-T_{r})+\frac{1}{C_{r}R_{ra}}(T_{a}-T_{r})+\dot{Q}_{ac}
