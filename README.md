@@ -31,8 +31,11 @@ which can be written as:
 ```math
 \dot x=Ax+Bu+Gd
 ```
-where $d$ is the outdoor temperature which is considered as the disturbance term and $G$ is the according system matrix, $u$ is the control input (heater power, $\dot Q_{ac}$), $B=\begin{bmatrix}
-1 \\ 0 \end{bmatrix}$
+```math
+B=\begin{bmatrix}
+1 \\ 0 \end{bmatrix}
+```
+where $d$ is the outdoor temperature which is considered as the disturbance term and $G$ is the according system matrix, $u$ is the control input (heater power, $\dot Q_{ac}$)
 <br/>
 where heatsink base area 
 $A_{base}=(N_{fin}-1)\cdot b\cdot L$, 
