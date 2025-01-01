@@ -48,6 +48,22 @@ J=x^{T}(t_{1})F(t_{1})x(t_{1})+\int_{t_{0}}^{t_{1}}(x^{T}Qx+u^{T}Ru)dt
 ```
 where $x$ is the states of the system, $u$ is the control input, $F(t_{1})$ is the initial cost matrix, $Q$ is the state cost matrix, and $R$ is the control cost matrix
 <br/>
+Since we only focus on the room temperature, the state cost matrix $Q$ is given as:
+```math
+Q=\begin{bmatrix}
+q & 0 \\ 0 & 0
+\end{bmatrix}
+```
+where q value is decided by tuning
+<br/>
+Since we only has only control input, the control cost matrix $R$ is given as: 
+```math
+R=\begin{bmatrix}
+r
+\end{bmatrix}
+```
+where r value is decided by tuning
+<br/>
 The feedback control law that minimized the cost function is:
 ```math
 u=-K(x-T_{setting})-KGd
