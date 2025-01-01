@@ -81,16 +81,8 @@ P(t_{1})=F(t_{1})=Q(t_{1})
 ```
 
 **Constraints:**
+<br/>
 The heater input is between [10, 300] Watts
-
-**Optimization methods:**
-
-1. Single-Objective Optimization:
-   - MATLAB "fmincon" function
-   - Augmented Lagrangian Method (ALM)
-2. Bi-Objective Optimization:
-   - MATLAB "goalattain" function
-   - Weight sum methods
 
 # Results
 ![Results](https://github.com/user-attachments/assets/447b174a-6ce9-4f21-805e-3bf173ab2775)
@@ -100,13 +92,3 @@ The heater input is between [10, 300] Watts
 | Single-obj: ALM | 158  | 158  | 90  | 0.7, 0.3  | 3.8, 2.8  | 25  |0.0123 |
 | Multi-obj: goalattain | 212  | 250 | 250  | 0.2, 1.0  | 2.8, 2.0  | 25 |0.015|
 
-# CRediT authorship contribution statement
-
-**Po-Ching Hsu:** Conceptualization, Writing, Software, Methodology, Investigation
-<br/>
-**Alhussain Othman:** Writing, Software, Methodology, Investigation
-<br/>
-**Dong-Hyun Cho:** Writing, Validation
-
-**Reference**
-[^1]: Culham, J.R., and Muzychka, Y.S. “Optimization of Plate Fin Heat Sinks Using Entropy Generation Minimization,” IEEE Trans. Components and Packaging Technologies, Vol. 24, No. 2, pp. 159-165, 2001.
