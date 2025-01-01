@@ -75,6 +75,10 @@ $P$ is found by solving the Riccati differential equation:
 ```math
 \frac{dP(t)}{dt}=-[A^{T}P(t)+P(t)A-P(t)BR^{-1}B^{T}P(t)+Q]
 ```
+with the boundary condition:
+```math
+P(t_{1})=F(t_{1})=Q(t_{1})
+```
 
 **Constraints:**
 
