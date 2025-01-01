@@ -22,10 +22,13 @@
 \end{bmatrix}\begin{bmatrix}
 T_{r} \\ T_{m}
 \end{bmatrix}+\begin{bmatrix}
-\frac{1}{C_{r}R_{ra}} \\0
-\end{bmatrix} T_{a}+\begin{bmatrix}
 \dot Q_{ac} \\ 0
-\end{bmatrix}
+\end{bmatrix}+\begin{bmatrix}
+\frac{1}{C_{r}R_{ra}} \\0
+\end{bmatrix} T_{a}
+```
+```math
+\dot x=Ax+Bu+Gd
 ```
 
 where heatsink base area 
