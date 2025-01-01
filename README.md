@@ -59,7 +59,7 @@ The problem is solved as finite-horizon problem with control horizon: 0.5 hrs
 ```math
 J=x^{T}(t_{1})F(t_{1})x(t_{1})+\int_{t_{0}}^{t_{1}}(x^{T}Qx+u^{T}Ru)dt
 ```
-
+where $F(t_{1})$ is the initial cost matrix
 **Design Variables:**
 
 1. CPU1 heatsink:
