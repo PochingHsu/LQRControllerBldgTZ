@@ -81,14 +81,7 @@ P(t_{1})=F(t_{1})=Q(t_{1})
 ```
 
 **Constraints:**
-
-1. CPU2 heatsink inlet [C] $T_{a2}\le T_{a3}-\epsilon_{T}$
-2. CPU2 heatsink inlet [C] $T_{a2}\le T_{jc,cpu}$
-3. GPU card airflow rate [m^3/s] $\forall_{air} \ge \forall_{min}=f_{GPU}(T_{a3})$
-4. GPU card inlet temperature [C] $T_{a3}\le 50$
-5. Heatsink total height [mm] $H_{fin} + H_{base} \le 44.45-H_{mb}-H_{cpu}-\epsilon$
-6. Heatsink base height [mm] $H_{base}\ge 2$
-7. Total pressure drop of CPU heatsinks [Pa] $dP_{total}\le 90$ (only used in single-obj optimization)
+The heater input is between [10, 300] Watts
 
 **Optimization methods:**
 
