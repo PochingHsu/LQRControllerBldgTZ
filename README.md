@@ -88,12 +88,12 @@ The heater input is between [10, 300] Watts
 $T_{setting}=22c$,  $T_{swing}=1c$
 <br/>
 $Q$ and $R$ matrix:
-$
+```math:
 Q=\begin{bmatrix}
 0.1 & 0 \\ 0 & 0
 \end{bmatrix}, R=\begin{bmatrix}
 0.02 \end{bmatrix}
-$
+```
 ![LQR_TZ_results](https://github.com/user-attachments/assets/a601ab93-456c-43fc-aebc-0dd46f8548de)
 
 
