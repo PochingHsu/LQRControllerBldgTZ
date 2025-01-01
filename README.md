@@ -61,6 +61,7 @@ r
 ```
 where q and r values are decided by tuning
 <br/>
+<br/>
 The feedback control law that minimized the cost function is:
 ```math
 u=-K(x-T_{setting})-KGd
