@@ -1,4 +1,4 @@
-# LQR controller for building thermal zone
+# LQR Controller for Energy Optimization in Building
 # 2R2C building modeling
 ![2R2C](https://github.com/user-attachments/assets/1b5595fa-cb77-4f40-846e-9d52526e30ee)
 
