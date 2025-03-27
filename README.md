@@ -1,5 +1,5 @@
 # LQR Controller for Energy Optimization in Building
-This project develops an LQR controller and applies it to a building modeled using a 2R2C thermal network.
+This project develops an LQR controller and applies it to a building modeled by a 2R2C thermal network.
 # 2R2C building modeling
 ![2R2C](https://github.com/user-attachments/assets/1b5595fa-cb77-4f40-846e-9d52526e30ee)
 
